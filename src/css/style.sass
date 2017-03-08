@@ -1,0 +1,140 @@
+
+
+// Header
+$header-color: #CA271C
+$header-bckg: #263238
+$header-bckg-in: #fff
+$header-col-p: #fff
+
+$bckg: #F1F1F1
+// Section
+
+$section-color: black
+$section-bckg: #F1F1F1
+$section-bckg-in: #fff
+
+// Footer
+$footer-color: black
+$footer-bckg: #F1F1F1
+$footer-bckg-in: $header-bckg-in
+
+
+// Borders
+$header-border: #E5E5E5
+$section-border: $header-border
+$footer-border: $header-border
+
+@import url(http://fonts.googleapis.com/css?family=Open-Sans)
+
+@mixin padd
+  padding: 0.3em 0 0.3em 0
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+body
+  margin: 0 auto
+  padding: 0 auto
+  // Font Typografy
+  font-style: normal
+  font-weight: normal
+  font-stretch: normal
+  font-size: 17px
+  line-height: 1.7em
+  font-family: "Open Sans", Georgia, serif
+
+  background-color: $bckg
+
+.contact-bckg
+  background-color: #333
+
+.contact
+  color: #218cdf
+  font-size: 12px
+  text-align: right
+
+header
+  background-color: $header-bckg-in
+  border: 1px solid $header-border
+  // margin-top: 1em !important
+
+  h3
+    margin: 0.5em 1px 0.3em 1em
+    color: $header-color
+    font-weight: 600
+
+  h3:nth-child(2)
+    color: #217AC0
+    margin-left: 0.1em
+
+  p
+    font-size: 11px
+
+nav
+  // padding: 3px 0 0 0
+  // background-color: #2B4162
+  // background-position: center
+  border-top: 1px solid #E5E5E5
+
+
+
+  ul
+    background-color: #263238
+    padding: 0.2em 0 0.2em 0 !important
+
+    &::after
+      content: ("")
+      padding-right: -100px
+
+  li
+    color: white
+
+    // border: 0.1px solid #E5E5E5
+
+    margin-right: 0.5em
+    padding: 5px
+
+    list-style-type: none
+    text-align: center !important
+
+    &:hover
+      color: white
+      background-color: #CA271C
+
+  li:nth-child(3)
+    margin-right: 0
+
+section
+  background-color: $section-bckg-in
+  border: 1px solid $section-border
+
+  @include padd
+
+.blank
+  min-height: 70vh
+  background: $section-bckg !important
+
+footer
+  background-color: $footer-bckg-in
+  border: 1px solid $footer-border
+
+  @include padd
+  p
+    color: $footer-color
+
+@media (max-width: 576px)
+  footer
+    flex-direction: column !important
+    text-align: center
+
+.header-bckg
+  background-color: $header-bckg
+
+.section-bckg
+  background-color: $section-bckg
+  margin-top: 2em !important
+
+.footer-bckg
+  background-color: $footer-bckg

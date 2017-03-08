@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Open-Sans);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 17px;
+  line-height: 1.7em;
+  font-family: "Open Sans", Georgia, serif;
+  background-color: #F1F1F1;
+}
+
+.contact-bckg {
+  background-color: #333;
+}
+
+.contact {
+  color: #218cdf;
+  font-size: 12px;
+  text-align: right;
+}
+
+header {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+}
+
+header h3 {
+  margin: 0.5em 1px 0.3em 1em;
+  color: #CA271C;
+  font-weight: 600;
+}
+
+header h3:nth-child(2) {
+  color: #217AC0;
+  margin-left: 0.1em;
+}
+
+header p {
+  font-size: 11px;
+}
+
+nav {
+  border-top: 1px solid #E5E5E5;
+}
+
+nav ul {
+  background-color: #263238;
+  padding: 0.2em 0 0.2em 0 !important;
+}
+
+nav ul::after {
+  content: "";
+  padding-right: -100px;
+}
+
+nav li {
+  color: white;
+  margin-right: 0.5em;
+  padding: 5px;
+  list-style-type: none;
+  text-align: center !important;
+}
+
+nav li:hover {
+  color: white;
+  background-color: #CA271C;
+}
+
+nav li:nth-child(3) {
+  margin-right: 0;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  padding: 0.3em 0 0.3em 0;
+}
+
+.blank {
+  min-height: 70vh;
+  background: #F1F1F1 !important;
+}
+
+footer {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  padding: 0.3em 0 0.3em 0;
+}
+
+footer p {
+  color: black;
+}
+
+@media (max-width: 576px) {
+  footer {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+.header-bckg {
+  background-color: #263238;
+}
+
+.section-bckg {
+  background-color: #F1F1F1;
+  margin-top: 2em !important;
+}
+
+.footer-bckg {
+  background-color: #F1F1F1;
+}

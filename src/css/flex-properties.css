@@ -27,11 +27,7 @@
 }
 
 .row {
-  display: -webkit-flex;
-  display-display: -webkit-box;
-  display-display: -ms-flexbox;
-  display-display-display: -moz-box;
-  display-display-display-display: flex;
+  display: flex;
   flex-flow: column wrap;
   margin: 0 auto;
 }
@@ -48,7 +44,6 @@
 
 .col {
   flex: 1;
-  color: black;
 }
 
 .col-1 {
@@ -56,9 +51,24 @@
   max-width: 8.333333%;
 }
 
+.col-2 {
+  flex-basis: 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
 .col-4 {
   flex-basis: 33.333333%;
   max-width: 33.333333%;
+}
+
+.col-5 {
+  flex-basis: 41.666667%;
+  max-width: 41.666667%;
 }
 
 .col-6 {
@@ -66,9 +76,29 @@
   max-width: 50%;
 }
 
+.col-7 {
+  flex-basis: 58.333333%;
+  max-width: 58.333333%;
+}
+
 .col-8 {
   flex-basis: 66.666667%;
   max-width: 66.666667%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  flex-basis: 91.666667%;
+  max-width: 91.666667%;
 }
 
 .col-12 {
@@ -84,17 +114,15 @@
   flex-direction: row;
 }
 
-.flex-just-space-bet {
+.flex-just-spac-betw {
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-.flex-just-space-aro {
+.flex-just-spac-arou {
   justify-content: space-around;
 }
 
-.flex-just-sta {
+.flex-just-star {
   justify-content: flex-start;
 }
 
@@ -102,34 +130,34 @@
   justify-content: flex-end;
 }
 
-.flex-just-cen {
+.flex-just-cent {
   justify-content: center;
 }
 
-.alig-ite-end {
+.alig-item-end {
   align-items: flex-end;
 }
 
-.alig-ite-sta {
+.alig-item-start {
   align-items: flex-start;
 }
 
-.ali-ite-cent {
+.alig-item-cent {
   align-items: center;
 }
 
-.ali-ite-line {
+.alig-item-line {
   align-items: baseline;
 }
 
-.alig-sel-cent {
+.alig-self-cent {
   align-self: center;
 }
 
-.alig-con-sta {
+.alig-cont-star {
   align-content: flex-start;
 }
 
-.alig-con-space-bet {
+.alig-cont-spac-betw {
   align-content: space-between;
 }
