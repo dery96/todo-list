@@ -2,9 +2,19 @@
 
 // Header
 $header-color: #CA271C
-$header-bckg: #263238
-$header-bckg-in: #fff
 $header-col-p: #fff
+$header-bckg: #F1F1F1
+$header-bckg-in: #fff
+
+// NavBar
+
+$nav-color: black
+$nav-color-hover: #CA271C
+
+$nav-bckg-hover: #fff
+$nav-bckg: #F1F1F1
+$nav-bckg-in: #fff
+
 
 $bckg: #F1F1F1
 // Section
@@ -15,12 +25,13 @@ $section-bckg-in: #fff
 
 // Footer
 $footer-color: black
-$footer-bckg: #F1F1F1
+$footer-bckg: #217ACB
 $footer-bckg-in: $header-bckg-in
 
 
 // Borders
 $header-border: #E5E5E5
+$nav-border: $header-border
 $section-border: $header-border
 $footer-border: $header-border
 
@@ -48,11 +59,15 @@ body
   background-color: $bckg
 
 .contact-bckg
-  background-color: #333
+  background-color: rgba(#E5E5E5, 0.31)
+  border-left: 1px solid #E5E5E5
+  border-bottom: 1px solid #E5E5E5
+  border-right: 1px solid #E5E5E5
 
 .contact
-  color: #218cdf
-  font-size: 12px
+  color: black
+  font-weight: bold
+  font-size: 14px
   text-align: right
 
 header
@@ -81,30 +96,34 @@ nav
 
 
   ul
-    background-color: #263238
+    background-color: $nav-bckg-in
     padding: 0.2em 0 0.2em 0 !important
 
-    &::after
-      content: ("")
-      padding-right: -100px
+    // &::after
+    //   content: ("")
+    //   padding-right: -100px
 
   li
-    color: white
-
     // border: 0.1px solid #E5E5E5
 
     margin-right: 0.5em
-    padding: 5px
+    padding: 15px
 
     list-style-type: none
     text-align: center !important
 
-    &:hover
-      color: white
-      background-color: #CA271C
-
   li:nth-child(3)
     margin-right: 0
+
+  a
+    color: $nav-color
+    text-decoration: none
+    text-transform: full-width
+    font-weight: 100 !important
+
+    // &:hover
+    //   color: $nav-color-hover
+    //   background-color: $nav-bckg-hover
 
 section
   background-color: $section-bckg-in
@@ -131,6 +150,9 @@ footer
 
 .header-bckg
   background-color: $header-bckg
+
+.nav-bckg
+  background-color: $nav-bckg
 
 .section-bckg
   background-color: $section-bckg
