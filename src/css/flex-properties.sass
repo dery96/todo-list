@@ -1,0 +1,106 @@
+@media (min-width: 576px)
+  .row
+    width: 540px
+    max-width: 100%
+
+@media (min-width: 768px)
+  .row
+    width: 720px
+    max-width: 100%
+
+@media (min-width: 992px)
+  .row
+    width: 960px
+    max-width: 100%
+
+@media (min-width: 1200px)
+  .row
+    width: 1140px
+    max-width: 100%
+
+.row
+  display: -webkit-flex
+   display: -webkit-box
+   display: -ms-flexbox
+      display: -moz-box
+          display: flex
+  
+  flex-flow: column wrap
+  // text-align: center
+  margin: 0 auto
+
+.container
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+.col:first
+  margin: 5px
+
+.col
+  flex: 1
+  color: black
+
+.col-1
+  flex-basis: 8.333333%
+  max-width: 8.333333%
+
+.col-4
+  flex-basis: 33.333333%
+  max-width: 33.333333%
+
+.col-6
+  flex-basis: 50%
+  max-width: 50%
+
+.col-8
+  flex-basis: 66.666667%
+  max-width: 66.666667%
+
+.col-12
+  flex-basis: 100%
+  max-width: 100%
+
+.flex-dir-col
+  flex-direction: column
+
+.flex-dir-row
+  flex-direction: row
+
+.flex-just-space-bet
+  justify-content: space-between
+  padding-left: 10px
+  padding-right: 10px
+
+.flex-just-space-aro
+  justify-content: space-around
+
+.flex-just-sta
+  justify-content: flex-start
+
+.flex-just-end
+  justify-content: flex-end
+
+.flex-just-cen
+  justify-content: center
+
+.alig-ite-end
+  align-items: flex-end
+
+.alig-ite-sta
+  align-items: flex-start
+
+.ali-ite-cent
+  align-items: center
+
+.ali-ite-line
+  align-items: baseline
+
+.alig-sel-cent
+  align-self: center
+
+.alig-con-sta
+  align-content: flex-start
+
+.alig-con-space-bet
+  align-content: space-between
