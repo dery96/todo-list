@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="src/css/flex-properties.css">
   <link rel="stylesheet" href="src/css/style.css">
 
-  <script src="todo.js" charset="utf-8"></script>
+  <script src="sarc/js/todo.js" charset="utf-8"></script>
 </head>
 <body>
 
@@ -46,27 +46,36 @@
   <div class="section-bckg">
     <section class="row flex-dir-row">
 
-      <div class="row dodaj">
+      <div class="row add-btn-area">
         <h3>Nazwa Zadania:</h3>
         <div class="row flex-dir-row flex-just-star">
         <span class="col-6"><input type="text" name="" placeholder="Wpisz"></span><button type="button" name="Dodaj"><p>Dodaj</p></button>
         </div>
       </div>
 
-      <div class="row dodaj">
+      <div class="row add-btn-area">
         <h3>Dodaj do kategorii:</h3>
         <div class="row flex-dir-row flex-just-star">
         <span class="col-6"><input type="text" name="" placeholder="Wpisz"></span><button type="button" name="Dodaj"><p>Dodaj</p></button>
         </div>
+
+        <div class="checkboxOne row flex-dir-row">
+          <input type="checkbox" id="checkboxOneInput" name=""/>
+          <label for="checkboxOneInput">Dom</label>
+
+          <input type="checkbox" id="checkboxOneInpute" name=""/>
+          <label for="checkboxOneInpute">Praca</label>
+
+          <input type="checkbox" id="checkboxOneInputc" name=""/>
+          <label for="checkboxOneInputc">Projekty</label>
+        </div>
+
       </div>
 
-      <div class="row col-6 lista">
-        <h3>Dom</h3>
-      	<div class="checkboxOne">
-      		<input type="checkbox" value="1" id="checkboxOneInput" name="" />
-    	  	<label for="checkboxOneInput"></label>
-      	</div>
+      <!-- <div class="row col lista">
 
+
+        <br>
         <li>Egzamin z Matematyki - notatki</li>
         <li></li>
         <li>Egzamin z Matematyki - notatki</li>
@@ -74,14 +83,15 @@
         Nazwy zadan jako podpunkty
         <br>- Chomomiczan
         <br>- Wyniesc smieci</p>
-      </div>
+      </div> -->
 
-      <div class="col row">
+      <div class="row">
         <p>Lista Zadań</p>
       </div>
+
     </section>
   </div>
-
+  <div class="blank"> </div>
   <div class="footer-bckg">
     <footer class="row col-12 flex-just-spac-betw">
 

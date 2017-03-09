@@ -1,5 +1,3 @@
-
-
 // Header
 $header-color: #CA271C
 $header-col-p: #fff
@@ -37,7 +35,7 @@ $nav-border: $header-border
 $section-border: $header-border
 $footer-border: #0f1518
 
-@import url(http://fonts.googleapis.com/css?family=Open-Sans)
+// @import url(http://fonts.googleapis.com/css?family=Open-Sans)
 @import url(http://fonts.googleapis.com/css?family=Lato)
 
 @mixin padd
@@ -84,9 +82,6 @@ header
 
   margin-top:1em !important
   margin-bottom:0.5em !important
-
-  // border-top-left-radius: 1em
-  // border-top-right-radius: 1em
 
   h1
     margin: 0.5em 1px 0.3em 0.4em
@@ -135,12 +130,11 @@ nav
 
 section
   background-color: $section-bckg-in
-  //border: 1px solid $section-border
 
   // > *
-  //   border: 1px solid red
+  //   border: 1px solid
 
-  .dodaj
+  .add-btn-area
     padding: 1em
     background-color: #fff !important
 
@@ -211,10 +205,10 @@ section
       	top: 2px
         left: 5px
         right: 1px
-        // transition: all 1s cubic-bezier(.25,.8,.25,1) !important
-        // -webkit-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
-        // -moz-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
-        // box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
+        transition: all 1s cubic-bezier(.25,.8,.25,1) !important
+        -webkit-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
+        -moz-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
+        box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.34) !important
       // &:hover
       //   background-color: #263238
       //   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important
@@ -227,27 +221,62 @@ section
       //   border: 0
         // transition: all 0.1s cubic-bezier(.25,.8,.25,1) !important
   @include padd
-  // min-height: 80vh
+
+
+  .add-btn-area:nth-child(2)
+    padding-top: 0 !important
+    margin-top: 0 !important
 
 .lista
 
   @include padd
   margin-left: 1em
 
-  // background: #555
-  margin: 20px 80px
-  position: relative
-  border-radius: 3px
-
   input[type=checkbox]
+    visibility: hidden
+
+  > *
+    border: 1px solid
+.checkboxOne
+ h3
+   width: 100px
+   border: 1px solid
+   text-align: center
+
+input[type=checkbox]
   visibility: hidden
 
-// ukrywanie ustawien checkboxa
+input[type=checkbox]:after
+    content: attr(value)
+    margin: -3px 15px
+    vertical-align: top
+    white-space:nowrap
+    display: inline-block
 
+input[type=checkbox]:checked + label
+  border: 1px solid #E5E5E5
+  border-radius: 5px
 
-// .blank
-//   min-height: 80vh
-//   background: $section-bckg-in !important
+  color: #4b7814
+
+label:hover
+  font-weight: bold
+
+input[type=checkbox]:checked + label::after
+  // padding-right: 1em !important
+
+  font-family: FontAwesome !important
+  margin-left: 0.5em
+  border: 1px solid #4b7814
+  content: ("\f00c") !important
+  background-color: #fff
+  border-radius: 10px
+  color: #7AC121
+  @include tekstshadow
+
+.blank
+  background-color: #FFFFFF
+  min-height: 35vh
 
 footer
   background-color: $footer-bckg-in
