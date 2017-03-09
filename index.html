@@ -18,6 +18,7 @@
   <script src="todo.js" charset="utf-8"></script>
 </head>
 <body>
+
   <div class="contact-bckg">
     <div class="contact row">
       <p>Kontakt: <strong>dery1[at]gmail.com</strong></p>
@@ -35,7 +36,7 @@
           <!-- <hr style="margin-bottom: 0.2em; width: 90%; margin-left: 1em; color: #E5E5E5;"> -->
     <nav class="row">
       <ul class="row flex-dir-row flex-just-star">
-        <li><a href="#main">Strona Główna</a></li>
+        <li id="current-nav-menu"><a href="#main">Strona Główna</a></li>
         <li><a href="#plan">Plan</a></li>
         <li><a href="#zadania">Zadania</a></li>
       </ul>
@@ -43,11 +44,42 @@
   </div>
 
   <div class="section-bckg">
-    <section class="row">
-      <p class="col"><input type="text" name="" value=""><button type="button" name="Dodaj">Dodaj</button></p>
+    <section class="row flex-dir-row">
 
+      <div class="row dodaj">
+        <h3>Nazwa Zadania:</h3>
+        <div class="row flex-dir-row flex-just-star">
+        <span class="col-6"><input type="text" name="" placeholder="Wpisz"></span><button type="button" name="Dodaj"><p>Dodaj</p></button>
+        </div>
+      </div>
+
+      <div class="row dodaj">
+        <h3>Dodaj do kategorii:</h3>
+        <div class="row flex-dir-row flex-just-star">
+        <span class="col-6"><input type="text" name="" placeholder="Wpisz"></span><button type="button" name="Dodaj"><p>Dodaj</p></button>
+        </div>
+      </div>
+
+      <div class="row col-6 lista">
+        <h3>Dom</h3>
+      	<div class="checkboxOne">
+      		<input type="checkbox" value="1" id="checkboxOneInput" name="" />
+    	  	<label for="checkboxOneInput"></label>
+      	</div>
+
+        <li>Egzamin z Matematyki - notatki</li>
+        <li></li>
+        <li>Egzamin z Matematyki - notatki</li>
+        <p>
+        Nazwy zadan jako podpunkty
+        <br>- Chomomiczan
+        <br>- Wyniesc smieci</p>
+      </div>
+
+      <div class="col row">
+        <p>Lista Zadań</p>
+      </div>
     </section>
-    <div class="blank row"></div>
   </div>
 
   <div class="footer-bckg">
@@ -57,7 +89,7 @@
         <div class="row col-6">
           <h4>Nawiguj:</h4>
           <ul class="little-menu row">
-            <li><a href="#main">Strona Główna</a></li>
+            <li id="current-little-menu"><a href="#main">Strona Główna</a></li>
             <li><a href="#plan">Plan</a></li>
             <li><a href="#zadania">Zadania</a></li>
           </ul>
@@ -71,13 +103,13 @@
       </div>
     </footer>
   </div>
+
   <div class="copyright-bckg">
       <span class="row flex-dir-row flex-just-spac-betw">
         <p class="">Copyright (c) 2017</p>
         <p class="">todo task</p>
       </span>
   </div>
-
 
 </body>
 </html>
